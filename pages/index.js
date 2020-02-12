@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import styled from "styled-components";
 import { testPromise } from "../random_api/random";
+import { Display } from "../components/display";
 
 const Index = () => {
   const [response, setResponse] = useState(null);
@@ -25,7 +26,7 @@ const Index = () => {
 
   return (
     <Wrapper>
-      <Label>Here's the response from the promise {response}</Label>
+      <Display displayStr={response} />
       <OtherRandomButton onClick={() => setCounter(counter + 1)}>
         {counter}
       </OtherRandomButton>
@@ -37,11 +38,6 @@ export default Index;
 
 const Wrapper = styled.div`
   display: flex;
-`;
-
-const Label = styled.div`
-  font-size: 2rem;
-  margin: 2rem auto;
 `;
 
 const OtherRandomButton = styled.button`
