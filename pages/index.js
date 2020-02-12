@@ -12,6 +12,7 @@ export default Index;
 
 const Wrapper = styled.div`
   display: flex;
+  flex-direction: column;
 `;
 
 const Label = styled.div`
