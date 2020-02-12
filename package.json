@@ -13,6 +13,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "immutable": "^4.0.0-rc.12",
     "next": "^4.2.3",
     "prettier": "^1.8.2",
     "react": "^16.8.0",
